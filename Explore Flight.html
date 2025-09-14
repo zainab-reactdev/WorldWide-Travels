@@ -75,31 +75,67 @@
             <div id="flightResults"></div>
         </div>
     </section>
-
-<!-- Footer Section -->
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-logo">
-            <h4>WORLDWIDE TRAVEL</h4>
-        </div>
-
-        <div class="footer-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="Sign Up.html">Sign Up</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="#">Reveiws</a></li>
-                <li><a href="#">Help</a></li>
-                
-            </ul>
-        </div>
-        <div class="footer-social">
-            <a href="#">Facebook</a> | <i class="fa-brands fa-facebook" style="color: #000000;"></i> |
-            <a href="#">Instagram</a> | <i class="fa-brands fa-instagram" style="color: #000000;"></i>
-            <a href="#">Twitter</a> |  <i class="fa-brands fa-twitter" style="color: #000000;"></i>
-        </div>
+<!-- ✅ Travel Website Responsive Footer -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3>WORLDWIDE TRAVELS</h3>
+      <p>Discover the world with us. Adventure, culture, and memories await you!</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
     </div>
+
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="Destination.html">Destinations</a></li>
+        <li><a href="Packages.html">Packages</a></li>
+        <li><a href="Booking.html">Booking</a></li>
+        <li><a href="Reviews.html">Reviews</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="contact.html">Help Center</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Newsletter</h3>
+      <p>Subscribe to get the latest travel deals & offers.</p>
+      <div class="newsletter">
+        <input type="email" id="email" placeholder="Enter your email">
+        <button onclick="subscribe()">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 WORLDWIDE TRAVELS. All rights reserved.</p>
+  </div>
 </footer>
+
+<script>
+  function subscribe() {
+    let email = document.getElementById("email").value;
+    if (email === "") {
+      alert("Please enter your email!");
+    } else {
+      alert("Thanks for subscribing! 🛫");
+      document.getElementById("email").value = "";
+    }
+  }
+</script>
+
 
 
 
